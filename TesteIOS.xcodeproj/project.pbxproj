@@ -22,6 +22,8 @@
 		FA9FAC81262B5F0C00F58F36 /* LuxfactaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9FAC80262B5F0C00F58F36 /* LuxfactaTest.swift */; };
 		FA9FAC8A262B657900F58F36 /* Seeds+Palindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9FAC89262B657900F58F36 /* Seeds+Palindrome.swift */; };
 		FA9FAC92262B667400F58F36 /* PalidromeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9FAC91262B667400F58F36 /* PalidromeTest.swift */; };
+		FA9FAC98262B6BB600F58F36 /* PathTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9FAC97262B6BB600F58F36 /* PathTest.swift */; };
+		FA9FACA0262B6BDF00F58F36 /* Seeds+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9FAC9F262B6BDF00F58F36 /* Seeds+Path.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		FA9FAC80262B5F0C00F58F36 /* LuxfactaTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuxfactaTest.swift; sourceTree = "<group>"; };
 		FA9FAC89262B657900F58F36 /* Seeds+Palindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Seeds+Palindrome.swift"; sourceTree = "<group>"; };
 		FA9FAC91262B667400F58F36 /* PalidromeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalidromeTest.swift; sourceTree = "<group>"; };
+		FA9FAC97262B6BB600F58F36 /* PathTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathTest.swift; sourceTree = "<group>"; };
+		FA9FAC9F262B6BDF00F58F36 /* Seeds+Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Seeds+Path.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 		FA9FAC3B262B4A2600F58F36 /* TesteIOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				FA9FAC96262B6B9A00F58F36 /* Path */,
 				FA9FAC88262B654900F58F36 /* Palindrome */,
 				FA9FAC7F262B5EDA00F58F36 /* Luxfacta */,
 				FA9FAC6E262B5D6E00F58F36 /* Mock */,
@@ -182,9 +187,10 @@
 		FA9FAC6E262B5D6E00F58F36 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-				FA9FAC6F262B5DEE00F58F36 /* Seeds+LuxFacta.swift */,
 				FA9FAC77262B5E2000F58F36 /* Seeds.swift */,
+				FA9FAC6F262B5DEE00F58F36 /* Seeds+LuxFacta.swift */,
 				FA9FAC89262B657900F58F36 /* Seeds+Palindrome.swift */,
+				FA9FAC9F262B6BDF00F58F36 /* Seeds+Path.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -203,6 +209,14 @@
 				FA9FAC91262B667400F58F36 /* PalidromeTest.swift */,
 			);
 			path = Palindrome;
+			sourceTree = "<group>";
+		};
+		FA9FAC96262B6B9A00F58F36 /* Path */ = {
+			isa = PBXGroup;
+			children = (
+				FA9FAC97262B6BB600F58F36 /* PathTest.swift */,
+			);
+			path = Path;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,6 +366,8 @@
 				FA9FAC70262B5DEE00F58F36 /* Seeds+LuxFacta.swift in Sources */,
 				FA9FAC78262B5E2000F58F36 /* Seeds.swift in Sources */,
 				FA9FAC92262B667400F58F36 /* PalidromeTest.swift in Sources */,
+				FA9FAC98262B6BB600F58F36 /* PathTest.swift in Sources */,
+				FA9FACA0262B6BDF00F58F36 /* Seeds+Path.swift in Sources */,
 				FA9FAC8A262B657900F58F36 /* Seeds+Palindrome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
