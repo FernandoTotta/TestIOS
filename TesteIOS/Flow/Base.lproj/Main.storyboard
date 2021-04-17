@@ -15,8 +15,21 @@
                     <view key="view" contentMode="scaleToFill" id="gw3-OF-LYo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bem-Vindo!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gp-x2-30i">
+                                <rect key="frame" x="10" y="110" width="394" height="41"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6NO-xQ-N3L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9gp-x2-30i" firstAttribute="leading" secondItem="6NO-xQ-N3L" secondAttribute="leading" constant="10" id="Vo4-Vc-F70"/>
+                            <constraint firstItem="6NO-xQ-N3L" firstAttribute="trailing" secondItem="9gp-x2-30i" secondAttribute="trailing" constant="10" id="pIm-gE-wYk"/>
+                            <constraint firstItem="9gp-x2-30i" firstAttribute="top" secondItem="6NO-xQ-N3L" secondAttribute="top" constant="66" id="yS7-mD-6x5"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="7nF-0g-x5S"/>
                 </viewController>
@@ -47,14 +60,69 @@
                     <view key="view" contentMode="scaleToFill" id="8dj-fm-ytV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7th-Q8-3dr" customClass="LuxfactaView" customModule="TesteIOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex: 3" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hVq-eU-Idb">
+                                        <rect key="frame" x="43" y="170" width="102" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="102" id="36b-G2-8MA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                        <connections>
+                                            <action selector="tapNumberTextField:" destination="Ogb-Y6-3SB" eventType="editingDidEnd" id="eBM-hN-0kC"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnY-da-DXo">
+                                        <rect key="frame" x="198" y="167" width="196" height="40"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Verificar"/>
+                                        <connections>
+                                            <action selector="verifyNumberTapped:" destination="as9-wI-5zL" eventType="touchUpInside" id="ejB-ov-Yaf"/>
+                                        </connections>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rtv-Bw-kCn">
+                                        <rect key="frame" x="10" y="277" width="394" height="41"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="hVq-eU-Idb" firstAttribute="top" secondItem="7th-Q8-3dr" secondAttribute="top" constant="170" id="69Y-9v-z0B"/>
+                                    <constraint firstItem="TnY-da-DXo" firstAttribute="leading" secondItem="hVq-eU-Idb" secondAttribute="trailing" constant="53" id="8Rm-04-nZK"/>
+                                    <constraint firstItem="hVq-eU-Idb" firstAttribute="leading" secondItem="7th-Q8-3dr" secondAttribute="leading" constant="43" id="K13-mu-k6v"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rtv-Bw-kCn" secondAttribute="trailing" constant="10" id="N79-Zn-EeL"/>
+                                    <constraint firstItem="TnY-da-DXo" firstAttribute="leading" secondItem="hVq-eU-Idb" secondAttribute="trailing" constant="53" id="kw2-UH-bQR"/>
+                                    <constraint firstItem="Rtv-Bw-kCn" firstAttribute="leading" secondItem="7th-Q8-3dr" secondAttribute="leading" constant="10" id="qQd-uq-n6d"/>
+                                    <constraint firstAttribute="trailing" secondItem="TnY-da-DXo" secondAttribute="trailing" constant="20" id="rZZ-Df-TOF"/>
+                                    <constraint firstItem="Rtv-Bw-kCn" firstAttribute="top" secondItem="hVq-eU-Idb" secondAttribute="bottom" constant="70" id="tJF-Qd-hK2"/>
+                                    <constraint firstItem="TnY-da-DXo" firstAttribute="top" secondItem="7th-Q8-3dr" secondAttribute="top" constant="167" id="vt4-6O-CYf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="SoO-SH-zVL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7th-Q8-3dr" firstAttribute="trailing" secondItem="SoO-SH-zVL" secondAttribute="trailing" id="BbS-gi-9S9"/>
+                            <constraint firstItem="7th-Q8-3dr" firstAttribute="top" secondItem="SoO-SH-zVL" secondAttribute="top" id="KtO-YV-Xbz"/>
+                            <constraint firstItem="7th-Q8-3dr" firstAttribute="bottom" secondItem="SoO-SH-zVL" secondAttribute="bottom" id="Tih-JG-Hdc"/>
+                            <constraint firstItem="7th-Q8-3dr" firstAttribute="leading" secondItem="SoO-SH-zVL" secondAttribute="leading" id="zV7-De-5dj"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Luxfacta" image="pencil" catalog="system" id="vF1-7J-t8m"/>
+                    <connections>
+                        <outlet property="numberTextField" destination="hVq-eU-Idb" id="eN6-fb-nMY"/>
+                        <outlet property="resultLabel" destination="Rtv-Bw-kCn" id="vYT-qi-9iC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mec-Or-GWl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Ogb-Y6-3SB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1317" y="-81"/>
+            <point key="canvasLocation" x="-1317.3913043478262" y="-81.026785714285708"/>
         </scene>
         <!--Palindrome-->
         <scene sceneID="Twh-PX-jI2">

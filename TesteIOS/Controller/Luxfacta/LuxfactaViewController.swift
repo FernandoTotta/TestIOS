@@ -9,21 +9,33 @@ import UIKit
 
 class LuxfactaViewController: UIViewController {
 
+    @IBOutlet weak var numberTextField: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        numberTextField.delegate = self
+    }
 
-        self.view.backgroundColor = .cyan
+    @IBAction func verifyNumberTapped(_ sender: UIButton) {
+        let luxfactaModel = Luxfacta(n: Int(numberTextField.text ?? "")!)
+        resultLabel.text = luxfactaModel.say()
+        resultLabel.isHidden = false
+    }
+
+}
+
+extension LuxfactaViewController: UITextFieldDelegate {
+    
+    func hideKeyboard() {
+        numberTextField.resignFirstResponder()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        hideKeyboard()
+        return true
     }
-    */
 
 }
