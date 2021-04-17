@@ -24,6 +24,9 @@
 		FA9FAC92262B667400F58F36 /* PalidromeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9FAC91262B667400F58F36 /* PalidromeTest.swift */; };
 		FA9FAC98262B6BB600F58F36 /* PathTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9FAC97262B6BB600F58F36 /* PathTest.swift */; };
 		FA9FACA0262B6BDF00F58F36 /* Seeds+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9FAC9F262B6BDF00F58F36 /* Seeds+Path.swift */; };
+		FA9FACC0262B7F5600F58F36 /* PalidromeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9FACBF262B7F5600F58F36 /* PalidromeViewController.swift */; };
+		FA9FACCB262B7FC900F58F36 /* LuxfactaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9FACCA262B7FC900F58F36 /* LuxfactaViewController.swift */; };
+		FA9FACD4262B7FDB00F58F36 /* PathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9FACD3262B7FDB00F58F36 /* PathViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		FA9FAC91262B667400F58F36 /* PalidromeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalidromeTest.swift; sourceTree = "<group>"; };
 		FA9FAC97262B6BB600F58F36 /* PathTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathTest.swift; sourceTree = "<group>"; };
 		FA9FAC9F262B6BDF00F58F36 /* Seeds+Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Seeds+Path.swift"; sourceTree = "<group>"; };
+		FA9FACBF262B7F5600F58F36 /* PalidromeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalidromeViewController.swift; sourceTree = "<group>"; };
+		FA9FACCA262B7FC900F58F36 /* LuxfactaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuxfactaViewController.swift; sourceTree = "<group>"; };
+		FA9FACD3262B7FDB00F58F36 /* PathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,7 +185,10 @@
 		FA9FAC5B262B4B1900F58F36 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FA9FAC29262B4A2500F58F36 /* HomeViewController.swift */,
+				FA9FACD2262B7FCF00F58F36 /* Path */,
+				FA9FACC9262B7FB300F58F36 /* Luxfacta */,
+				FA9FACC5262B7F6500F58F36 /* Palindrome */,
+				FA9FACC4262B7F5E00F58F36 /* Home */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,6 +224,38 @@
 			isa = PBXGroup;
 			children = (
 				FA9FAC97262B6BB600F58F36 /* PathTest.swift */,
+			);
+			path = Path;
+			sourceTree = "<group>";
+		};
+		FA9FACC4262B7F5E00F58F36 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FA9FAC29262B4A2500F58F36 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FA9FACC5262B7F6500F58F36 /* Palindrome */ = {
+			isa = PBXGroup;
+			children = (
+				FA9FACBF262B7F5600F58F36 /* PalidromeViewController.swift */,
+			);
+			path = Palindrome;
+			sourceTree = "<group>";
+		};
+		FA9FACC9262B7FB300F58F36 /* Luxfacta */ = {
+			isa = PBXGroup;
+			children = (
+				FA9FACCA262B7FC900F58F36 /* LuxfactaViewController.swift */,
+			);
+			path = Luxfacta;
+			sourceTree = "<group>";
+		};
+		FA9FACD2262B7FCF00F58F36 /* Path */ = {
+			isa = PBXGroup;
+			children = (
+				FA9FACD3262B7FDB00F58F36 /* PathViewController.swift */,
 			);
 			path = Path;
 			sourceTree = "<group>";
@@ -350,10 +391,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA9FAC2A262B4A2500F58F36 /* HomeViewController.swift in Sources */,
+				FA9FACC0262B7F5600F58F36 /* PalidromeViewController.swift in Sources */,
+				FA9FACD4262B7FDB00F58F36 /* PathViewController.swift in Sources */,
 				FA9FAC65262B4E3900F58F36 /* Palindrome.swift in Sources */,
 				FA9FAC5D262B4BED00F58F36 /* Luxfacta.swift in Sources */,
 				FA9FAC26262B4A2500F58F36 /* AppDelegate.swift in Sources */,
 				FA9FAC6A262B52DF00F58F36 /* Path.swift in Sources */,
+				FA9FACCB262B7FC900F58F36 /* LuxfactaViewController.swift in Sources */,
 				FA9FAC28262B4A2500F58F36 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

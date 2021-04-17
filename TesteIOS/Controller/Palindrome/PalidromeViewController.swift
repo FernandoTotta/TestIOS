@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  PalidromeViewController.swift
 //  TesteIOS
 //
 //  Created by Fernando Totta on 17/04/21.
@@ -7,13 +7,10 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class PalidromeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = .green
     }
-
-
 }
-
