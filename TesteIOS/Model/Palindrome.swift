@@ -11,14 +11,16 @@ class Palindrome {
     static func isPalindrome(word: String) -> Bool {
         let lower = word.lowercased()
         
-        guard lower.count >= 2 else { return false }
+        guard lower.count >= 2 else {
+            return true
+        }
         
         let end = lower.index(lower.endIndex, offsetBy: -1)
         
         if lower[lower.startIndex] == lower[end] {
-            return true
-        }else {
-            return false
+            let startIndex = lower.index(word.startIndex, offsetBy: 1)
+            return isPalindrome(word: String(lower[startIndex..<end]))
         }
+        return false
     }
 }
